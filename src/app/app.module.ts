@@ -1,3 +1,4 @@
+import { ImportacaoComponent } from './demos/reactiveForms/importacao/impotacao.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -19,7 +20,8 @@ import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.compo
     HomeComponent,
     FooterComponent,
     SobreComponent,
-    CadastroComponent
+    CadastroComponent,
+    ImportacaoComponent
   ],
   imports: [
     BrowserModule,

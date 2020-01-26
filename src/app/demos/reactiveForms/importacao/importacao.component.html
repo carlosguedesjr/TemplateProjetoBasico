@@ -1,0 +1,29 @@
+<div class="container main-container">
+
+    <form novalidate (ngSubmit)="fileChange($event)" [formGroup]="importacaoForm">
+        <input type="file" (change)="fileChange($event)" placeholder="Impotação de arquivo" accept=".xls,.xlsx" class="btn btn-success">
+        <div id="output"></div>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">descricao</th>
+                <th scope="col">valor_min_venda</th>
+                <th scope="col">unid</th>
+                <th scope="col">valor_ult_compra</th>
+                <th scope="col">qtd_est</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of jsonData['Planilha1']">
+                <td>{{item.id}}</td>
+                <td>{{item.descricao}}</td>
+                <td>{{item.valor_min_venda | currency:'BRL':true:'1.2-2' }}</td>
+                <td>{{item.unid }}</td>
+                <td>{{item.valor_ult_compra | currency:'BRL':true:'1.2-2'}}</td>
+                <td>{{item.qtd_est }}</td>
+              </tr>
+            </tbody>
+          </table>
+    </form>
+</div>
