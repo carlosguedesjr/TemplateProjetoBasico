@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { WebcamInitError, WebcamImage } from 'ngx-webcam';
 
 @Component({
@@ -6,7 +6,7 @@ import { WebcamInitError, WebcamImage } from 'ngx-webcam';
   templateUrl: './documento-eletronico.component.html',
   styles: []
 })
-export class DocumentoEletronicoComponent implements OnInit {
+export class DocumentoEletronicoComponent implements OnInit{
 
   constructor() { }
 
@@ -25,6 +25,7 @@ export class DocumentoEletronicoComponent implements OnInit {
   handleImage(webcamImage: WebcamImage) {
     this.webcamImage = webcamImage;
   }
+
 
 }
 
