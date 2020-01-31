@@ -1,1 +1,10 @@
-<p>documento-eletronico works!</p>
+<!-- <webcam  style="width: 100px; height: 100px; margin-left: 35%;"
+ (initError)="handleInitError($event)"></webcam> -->
+
+ <app-camera (pictureTaken)="handleImage($event)"></app-camera>
+
+
+
+<div class="snapshot" *ngIf="webcamImage">
+	<img [src]="webcamImage.imageAsDataUrl" />
+</div>
