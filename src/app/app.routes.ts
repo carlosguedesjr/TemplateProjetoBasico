@@ -1,3 +1,4 @@
+import { DocumentoEletronicoComponent } from './demos/reactiveForms/documento-eletronico/documento-eletronico.component';
 import { Routes } from '@angular/router';
 import { HomeComponent } from './navegacao/home/home.component';
 import { SobreComponent } from './institucional/sobre/sobre.component';
@@ -9,5 +10,6 @@ export const rootRouterConfig: Routes = [
     { path: 'home', component: HomeComponent},
     { path: 'sobre', component: SobreComponent },
     { path: 'cadastro', component: CadastroComponent },
-    { path: 'importacao', component: ImportacaoComponent }
+    { path: 'importacao', component: ImportacaoComponent },
+    { path: 'documentoeletronico', component: DocumentoEletronicoComponent }
 ];
