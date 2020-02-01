@@ -13,6 +13,10 @@ import { SobreComponent } from './institucional/sobre/sobre.component';
 import { rootRouterConfig } from './app.routes';
 import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.component';
 import { DocumentoEletronicoComponent } from './demos/reactiveForms/documento-eletronico/documento-eletronico.component';
+import {WebcamModule} from 'ngx-webcam';
+import { CameraComponent } from './demos/reactiveForms/documento-eletronico/camera/camera.component';
+import { NgxBarcodeModule } from 'ngx-barcode';
+ 
 
 @NgModule({
   declarations: [
@@ -23,11 +27,14 @@ import { DocumentoEletronicoComponent } from './demos/reactiveForms/documento-el
     SobreComponent,
     CadastroComponent,
     ImportacaoComponent,
-    DocumentoEletronicoComponent
+    DocumentoEletronicoComponent,
+    CameraComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    WebcamModule,
+    NgxBarcodeModule,
     ReactiveFormsModule,
     [RouterModule.forRoot(rootRouterConfig, { useHash: false})]
   ],
