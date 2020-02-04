@@ -1,3 +1,4 @@
+import { NotFoundComponent } from './navegacao/not-found/not-found.component';
 import { DocumentoEletronicoComponent } from './demos/reactiveForms/documento-eletronico/documento-eletronico.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './navegacao/home/home.component';
@@ -15,7 +16,9 @@ const rootRouterConfig: Routes = [
     { path: 'documentoeletronico', component: DocumentoEletronicoComponent },
     { path: 'produtos', 
             loadChildren: () => import('./demos/arquitetura-componentes/produto.module')
-            .then(m => m.ProdutoModule)}
+            .then(m => m.ProdutoModule)},
+
+            {path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({

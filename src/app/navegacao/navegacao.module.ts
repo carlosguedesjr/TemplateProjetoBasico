@@ -4,22 +4,24 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
     declarations: [
         MenuComponent,
-        HomeComponent, 
-        FooterComponent
+        HomeComponent,
+        FooterComponent,
+        NotFoundComponent
     ],
     imports: [
         CommonModule,
         RouterModule
     ],
-    exports:[
+    exports: [
         MenuComponent,
-        HomeComponent, 
-        FooterComponent
+        HomeComponent,
+        FooterComponent, NotFoundComponent
     ]
 })
 export class NavegacaoModule { }
