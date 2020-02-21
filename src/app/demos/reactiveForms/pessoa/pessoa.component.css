@@ -1,0 +1,6 @@
+.btnForm {
+    border-radius: 5px;
+    border-right: 13px solid;
+    display: flex;
+    justify-content: center;
+}

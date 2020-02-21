@@ -12,6 +12,10 @@ import { FooterComponent } from './navegacao/footer/footer.component';
 import { SobreComponent } from './institucional/sobre/sobre.component';
 import { rootRouterConfig } from './app.routes';
 import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.component';
+import { PessoaComponent } from './demos/reactiveForms/pessoa/pessoa.component';
+import { AlunoComponent } from './demos/reactiveForms/aluno/aluno.component';
+import { ListagemAlunoComponent } from './demos/reactiveForms/listagem-aluno/listagem-aluno.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.compo
     FooterComponent,
     SobreComponent,
     CadastroComponent,
-    ImportacaoComponent
+    ImportacaoComponent,
+    PessoaComponent,
+    AlunoComponent,
+    ListagemAlunoComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
