@@ -1,0 +1,8 @@
+.status {
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #00de01;
+    background-color: #00de01;
+}

@@ -1,0 +1,83 @@
+<div class="container main-container">
+    <h3>Cadastro de Fornecedor</h3>
+    <br>
+   
+        <div class="row">
+            <div class="col-md-4">
+                <label for="nome">Nome</label>
+                <input class="form-control" id="nome" type="text" placeholder="Nome (requerido)"/>
+            </div>
+            <div class="col-md-4">
+                <label for="nome">Cpf/Cnpj</label>
+                <input class="form-control" id="nome" type="text" placeholder="Cpf/Cnpj (requerido)"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label for="cpf">Endereço</label>
+                <input class="form-control" id="matricula" type="text" placeholder="Endereço (requerido)"  />
+            </div>
+            <div class="col-md-4">
+                <label for="serie">Bairro</label>
+                <input class="form-control" id="serie" type="text" placeholder="Bairro (requerido)" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label for="cpf">Cidade</label>
+                <input class="form-control" id="matricula" type="text" placeholder="Cidade (requerido)"  />
+            </div>
+            <div class="col-md-4">
+                <label for="serie">Estado
+                </label>
+                <input class="form-control" id="serie" type="text" placeholder="Estado (requerido)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="cpf">Telefone</label>
+                <input class="form-control" id="matricula" type="text" placeholder="Telefone (requerido)"  />
+            </div>
+            <div class="col-md-4">
+                <label for="serie">Celular</label>
+                <input class="form-control" id="serie" type="text" placeholder="Celular (requerido)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="cpf">Email</label>
+                <input class="form-control" id="matricula" type="text" placeholder="Email (requerido)"  />
+            </div>
+            <div class="col-md-4">
+                <label for="serie">Contato</label>
+                <input class="form-control" id="serie" type="text" placeholder="Contato (requerido)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="serie">Status</label>
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Status do fornecedor
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Ativado</a>
+                  <a class="dropdown-item" href="#">Bloqueado</a>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+  
+        </div>
+        <br>
+        <div class="row">
+           
+            <div class="col-md-8 btns">
+            <button type="button" class="btn btn-success btns">Salvar</button> 
+            <button type="button" class="btn btn-danger btns" [routerLink]="['/fornecedores']">Voltar</button>
+        </div>
+        </div>
+        
+</div>

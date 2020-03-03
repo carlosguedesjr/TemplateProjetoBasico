@@ -1,0 +1,139 @@
+<div class="container main-container">
+    <h3>Listagem de Alunos</h3>
+    <br>
+
+    <div class="row">
+        <div class="col-md-10">
+            <label for="nome">Filtro</label>
+            <input class="form-control" id="nome" type="text" placeholder="Informe o nome do aluno(a)..."/>
+        </div>
+    </div>
+<br>
+
+
+    <div class="row">
+        <div class="col-md-10">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Status</th>
+                    <th scope="col">Aluno</th>
+                    <th scope="col">Serie</th>
+                    <th scope="col">Resp. Finac</th>
+                    <th scope="col">Status Finan</th>
+                    <th scope="col">Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" title="Matriculado"><div style="  border-radius: 50%;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border: 1px solid #00de01;
+                        background-color: #00de01;"></div></th>
+                    <td>Nome Aluno 1</td>
+                    <td>GI</td>
+                    <td>Nome do pai do aluno</td>
+                    <td><div style="  border-radius: 50%;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border: 1px solid #00de01;
+                        background-color: #00de01;"></div></td>
+                    <td title="editar" (click)="editarAluno()"><fa-icon [icon]="faEdit"></fa-icon></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" title="Matriculado"><div style="  border-radius: 50%;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border: 1px solid #00de01;
+                        background-color: #00de01;"></div></th>
+                    <td>Nome Aluno 2</td>
+                    <td>GI</td>
+                    <td>Nome do pai do aluno</td>
+                    <td><div style="  border-radius: 50%;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border: 1px solid #00de01;
+                        background-color: #00de01;"></div></td>
+                         <td title="editar" (click)="editarAluno()"><fa-icon [icon]="faEdit"></fa-icon></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" title="Matriculado"><div style="  border-radius: 50%;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border: 1px solid #00de01;
+                        background-color: #00de01;"></div></th>
+                    <td>Nome Aluno 3</td>
+                    <td>GIII</td>
+                    <td>Nome do pai do aluno</td>
+                    <td title="Pendência financeira"><div style="  border-radius: 50%;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border: 1px solid #dd7007;
+                        background-color: #dd7007;"></div></td>
+                        <td title="editar" (click)="editarAluno()"><fa-icon [icon]="faEdit"></fa-icon></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" title="Matriculado"><div style="  border-radius: 50%;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border: 1px solid #00de01;
+                        background-color: #00de01;"></div></th>
+                    <td>Nome Aluno 4</td>
+                    <td>GII</td>
+                    <td>Nome do pai do aluno</td>
+                    <td><div style="  border-radius: 50%;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border: 1px solid #00de01;
+                        background-color: #00de01;"></div></td>
+                        <td title="editar" (click)="editarAluno()"><fa-icon [icon]="faEdit"></fa-icon></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" title="Não matriculado"><div style="  border-radius: 50%;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border: 1px solid #dc0000;
+                        background-color: #dc0000;"></div></th>
+                    <td>Nome Aluno 5</td>
+                    <td>GII</td>
+                    <td>Nome do pai do aluno</td>
+                    <td></td>
+                    <td title="editar" (click)="editarAluno()"><fa-icon [icon]="faEdit"></fa-icon></td>
+                  </tr>
+                </tbody>
+                <br>
+               
+              </table>
+              <nav aria-label="Navegação de página exemplo">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Próximo</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+
+        
+
+    </div>
+
+    <br>
+
+
+</div>
