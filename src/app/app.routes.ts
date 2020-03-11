@@ -1,3 +1,4 @@
+import { OficinasComponent } from './demos/reactiveForms/oficinas/oficinas.component';
 import { NotFoundComponent } from './navegacao/not-found/not-found.component';
 import { DocumentoEletronicoComponent } from './demos/reactiveForms/documento-eletronico/documento-eletronico.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -17,6 +18,7 @@ import { ContasPagarComponent } from './demos/reactiveForms/contas-pagar/contas-
 import { FornecedoresComponent } from './demos/reactiveForms/fornecedores/fornecedores.component';
 import { FornecedorComponent } from './demos/reactiveForms/fornecedor/fornecedor.component';
 import { ContaPagarComponent } from './demos/reactiveForms/conta-pagar/conta-pagar.component';
+import { OficinaComponent } from './demos/reactiveForms/oficina/oficina.component';
 
 const rootRouterConfig: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -36,6 +38,8 @@ const rootRouterConfig: Routes = [
     { path: 'fornecedor', component: FornecedorComponent},
     { path: 'contasapagar', component: ContasPagarComponent},
     { path: 'contaapagar', component: ContaPagarComponent},
+    { path: 'oficinas', component: OficinasComponent},
+    { path: 'oficina', component: OficinaComponent},
     { path: 'produtos',
         loadChildren: () => import('./demos/arquitetura-componentes/produto.module')
             .then(m => m.ProdutoModule)

@@ -29,6 +29,8 @@ import { ContasPagarComponent } from './demos/reactiveForms/contas-pagar/contas-
 import { FornecedoresComponent } from './demos/reactiveForms/fornecedores/fornecedores.component';
 import { FornecedorComponent } from './demos/reactiveForms/fornecedor/fornecedor.component';
 import { ContaPagarComponent } from './demos/reactiveForms/conta-pagar/conta-pagar.component';
+import { OficinasComponent } from './demos/reactiveForms/oficinas/oficinas.component';
+import { OficinaComponent } from './demos/reactiveForms/oficina/oficina.component';
  
 
 @NgModule({
@@ -50,7 +52,9 @@ import { ContaPagarComponent } from './demos/reactiveForms/conta-pagar/conta-pag
     ContasPagarComponent,
     FornecedoresComponent,
     FornecedorComponent,
-    ContaPagarComponent
+    ContaPagarComponent,
+    OficinasComponent,
+    OficinaComponent
   ],
   imports: [
     BrowserModule,

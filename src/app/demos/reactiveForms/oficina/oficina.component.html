@@ -1,0 +1,144 @@
+<div class="container">
+    <h4>Cadastro de oficinas</h4>
+    <hr />
+    <form novalidate (ngSubmit)="salvarOficina()" [formGroup]="oficinaForm">
+        <div class="form-horizontal">
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="nome">Nome Completo</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="nome" type="text" placeholder="Nome (requerido)"
+                        formControlName="nome"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="telefone">Telefone</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="telefone" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="telefone"  />
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="celular">Celular</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="celular" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="celular"  />
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="cpf">Cpf</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="cpf" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="cpf"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="email">Email</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="email" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="email"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="endereco">Endereço</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="endereco" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="endereco"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="numero">Numero</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="numero" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="numero"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="bairro">Bairro</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="bairro" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="bairro"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="cidade">Cidade</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="cidade" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="cidade"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="uf">Uf</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="uf" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="uf"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="cep">Cep</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="cep" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="cep"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="ponto_referencia">Ponto Referencia</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="ponto_referencia" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="ponto_referencia"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="ativo">Ativo</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="ativo" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="ativo"  />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="observacao">Observação</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="observacao" type="text" placeholder="Telefone (99) 99999-9999"
+                        formControlName="observacao"  />
+                </div>
+            </div>
+
+
+
+            
+
+
+
+
+
+            <div class="form-group">
+                <div class="col-md-4 col-md-offset-2">
+                    <span><button class="btn btn-success" id="Registrar" [disabled]="!oficinaForm.valid"
+                            type="submit">Registrar</button></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4 col-md-offset-2">
+                    <p>Formulário valido: {{ oficinaForm.valid }}</p>
+                    <p>Formulário tocado: {{ oficinaForm.touched }}</p>
+                    <p>Formulário sujo: {{ oficinaForm.dirty }}</p>
+                    <p>Formulário: {{oficinaForm}}</p>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -79,6 +79,11 @@ abrir : boolean;
     name: 'Dashboard',
     exact: true,
     admin: false
+  },{
+    link: '/oficinas',
+    name: 'Oficinas',
+    exact: true,
+    admin: false
   }
   
   // ,{
