@@ -4,7 +4,7 @@
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</a>
         <div *ngFor="let item of nav">
-            <a [routerLink]="item.link"><i class="fas fa-child"></i> {{item.name}}</a>
+            <a [routerLink]="item.link"><fa-icon [icon]="['fab', 'angellist']"></fa-icon> {{item.name}}</a>
         </div>
 <!--         
         <a [routerLink]="['/listagem']"><i class="far fa-list-alt"></i>Listagem</a>
