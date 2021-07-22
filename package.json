@@ -26,7 +26,7 @@
         "quagga": "^0.12.1",
         "rxjs": "~6.5.3",
         "tslib": "^1.10.0",
-        "xlsx": "^0.15.4",
+        "xlsx": "^0.17.0",
         "zone.js": "~0.10.2"
     },
     "devDependencies": {
